@@ -7,9 +7,9 @@ import zio._
 import zio.console._
 
 object StartService extends App {
-  type AppEnvironment = Has[CmdClient] with Console
+  private type AppEnvironment = Has[CmdClient] with Console
 
-  // Existing layers...
+
   val movieServiceLayer: ZLayer[Any, Nothing, Has[MovieService]] =
     ZLayer.succeed[MovieService](new RunMovieService)
 
@@ -26,7 +26,7 @@ object StartService extends App {
     _         <- putStrLn(validLevels.mkString("\n"))
     _         <- putStrLn("\n############################################\n")
     cmdClient <- ZIO.service[CmdClient]
-    _ <- cmdClient.start(validLevels) // You can replace these placeholders with actual values from user input or elsewhere.
+    _ <- cmdClient.start(validLevels)
   } yield ()
 
   override def run(args: List[String]): URIO[zio.ZEnv, ExitCode] =
