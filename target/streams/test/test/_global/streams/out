@@ -1,0 +1,10 @@
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(com.sky.ServicesTest, zio.test.sbt.RunnableSpecFingerprint$@60f5177a, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m+[0m ServicesTest[0m
+[0m[[0m[0minfo[0m] [0m[0m  [32m+[0m ParentalControlService[0m
+[0m[[0m[0minfo[0m] [0m[0m    [32m+[0m successfully matches preferred and movie levels[0m
+[0m[[0m[0minfo[0m] [0m[0m    [32m+[0m fails when preferred level doesn't match movie level[0m
+[0m[[0m[0minfo[0m] [0m[0m    [32m+[0m propagates error when movie is not found[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRan 3 tests in 814 ms: 3 succeeded, 0 ignored, 0 failed[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mDone[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com.sky.ServicesTest[0m
